@@ -6,7 +6,13 @@ import 'react-multi-carousel/lib/styles.css';
 import arrow1 from "../assets/img/arrow1.svg";
 import arrow2 from "../assets/img/arrow2.svg";
 import colorSharp from "../assets/img/color-sharp.png"
-
+import skillBg from "../assets/img/light/134997058_732c0abf-1a08-4e6f-8461-cc1f3b15bd7d.jpg"
+import meter from "../assets/img/light/meter.svg";
+import TrackVisibility from "react-on-screen";
+import mountainSvg from "../assets/img/light/mountains-svgrepo-com.svg";
+import skillSvg from "../assets/img/light/skills-svgrepo-com.svg";
+import amazonSvg from "../assets/img/light/amazon-color-svgrepo-com.svg";
+import {Col, Row} from "react-bootstrap";
 export const Skills = () => {
   const responsive = {
     superLargeDesktop: {
@@ -34,11 +40,29 @@ export const Skills = () => {
             <div className="row">
                 <div className="col-12">
                     <div className="skill-bx wow zoomIn">
+                        <Row>
+                            <Col size={6} md={3} xl={4}>
+                            <TrackVisibility>
+                                {({ isVisible }) =>
+                                    <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
+                                        <img src={amazonSvg} alt="Header Img"/>
+                                    </div>}
+                            </TrackVisibility>
+                        </Col>
+                            <Col size={12} md={6} xl={8}>
                         <h2>Skills</h2>
-                        <p>I am a recent graduate from Motilal Nehru National Institute of Technology (MNNIT) Allahabad, where I completed my B.Tech degree in Electrical Engineering in 2023. During my academic tenure, I developed a strong foundation in computer science and honed my skills in various programming languages, including Python, Java, C/C++, and JavaScript. I am also proficient in tech stacks such as React JS, Node JS, MySQL, MongoDB, AWS, Git, VS Code , Eclipse and core subjects such as data structures, algorithms, and operating systems.</p>
+
+                        <p>I have graduated from Motilal Nehru National Institute of Technology (MNNIT) Allahabad,
+                            in 2023 where I completed my B.Tech degree in Electrical Engineering in 2023.
+                            During my academic tenure, I developed a strong foundation in computer science and
+                            honed my skills in various programming languages, including Python, Java, C/C++, and JavaScript.
+                            I am also proficient in tech stacks such as React JS, Node JS, MySQL, MongoDB, AWS, Git, VS Code ,
+                            Eclipse and core subjects such as data structures, algorithms, and operating systems.</p>
+
+
                         <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                             <div className="item">
-                                <img src={meter1} alt="Image" />
+                                <img src={meter} alt="Image" />
                                 <h5>Web Development</h5>
                             </div>
                             <div className="item">
@@ -66,11 +90,13 @@ export const Skills = () => {
                                 <h5>MongoDB</h5>
                             </div>
                         </Carousel>
+                            </Col>
+                        </Row>
                     </div>
                 </div>
             </div>
         </div>
-        <img className="background-image-left" src={colorSharp} alt="Image" />
+        {/*<img className="background-image-left" src={skillBg} alt="Image" />*/}
     </section>
   )
 }

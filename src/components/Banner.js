@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import headerImg from "../assets/img/header-img.svg";
+import mountainSvg from "../assets/img/light/mountains-svgrepo-com.svg";
+import amazonSvg from "../assets/img/light/amazon-color-svgrepo-com.svg";
 import { ArrowRightCircle } from 'react-bootstrap-icons';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -56,21 +58,35 @@ export const Banner = () => {
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                 <span className="tagline">Welcome to my Portfolio</span>
-                <h1>{`Hi! I'm Prajjwal Sharma`} <span className="txt-rotate" dataPeriod="1000" data-rotate='["Software Developer", Web Developer", "Full Stack Developer", "Frontend Developer" ]'><span className="wrap">{text}</span></span></h1>
-                  <p>Enthusiastic developer eager to contribute to team success through hard work, quick learning, attention to detail and excellent organizational skills.</p>
-                  <p>Software Developer @ Alcon Inc.</p>
-                  <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
+                <h1>
+                  {`Hi! I'm Prajjwal Sharma ` }
+                  <span className="txt-rotate" dataPeriod="1000" data-rotate='["Software Developer", Web Developer",
+                   "Full Stack Developer", "Frontend Developer" ]'>
+                    <span className="wrap">{text}</span></span></h1>
+                  <p>Enthusiastic developer eager to contribute to team success through hard work,
+                    quick learning, attention to detail and excellent organizational skills.</p>
+                <p><strong>
+                  Software Developer @ Amazon.</strong>
+                </p>
+                <button onClick={() => console.log('connect')}>
+                    Let’s Connect <ArrowRightCircle size={25} />
+                  </button>
               </div>}
             </TrackVisibility>
           </Col>
+
           <Col xs={12} md={6} xl={5}>
             <TrackVisibility>
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
-                  <img src={headerImg} alt="Header Img"/>
+                  <img src={mountainSvg} alt="Header Img"/>
                 </div>}
             </TrackVisibility>
           </Col>
+
+          {/*<Col xs={4} md={1} xl={2}>*/}
+          {/*  <img src={amazonSvg} alt="Header Img"/>*/}
+          {/*</Col>*/}
         </Row>
       </Container>
     </section>

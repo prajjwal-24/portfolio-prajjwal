@@ -234,7 +234,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .banner {
   margin-top: 0;
   padding: 260px 0 100px 0;
-  background-image: url('./assets/img/banner-bg.png');
+  background-image: url('assets/img/light/134997058_732c0abf-1a08-4e6f-8461-cc1f3b15bd7d.jpg');
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -243,7 +243,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-weight: 700;
   letter-spacing: 0.8px;
   padding: 8px 10px;
-  background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
+  background: linear-gradient(90.21deg, rgba(30, 196, 244, 0.5) -5.91%, rgba(11,127,171) 111.58%);
   border: 1px solid rgba(255, 255, 255, 0.5);
   font-size: 20px;
   margin-bottom: 16px;
@@ -258,7 +258,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   display: block;
 }
 .banner p {
-  color: #B8B8B8;
+  color: #FAF9F6;
   font-size: 18px;
   letter-spacing: 0.8px;
   line-height: 1.5em;
@@ -304,24 +304,27 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .skill {
   padding: 0 0 50px 0;
   position: relative;
+  background: linear-gradient(90.21deg, rgba(183, 193, 172,1) -5.91%, rgba(210, 238, 130,1) 111.58%);
 }
 .skill-bx {
-  background: #151515;
+  /*background: linear-gradient(90.21deg, rgba(183, 193, 172,0.8) -5.91%, rgba(210, 238, 130,0.8) 111.58%);*/
   border-radius: 64px;
   text-align: center;
   padding: 60px 50px;
-  margin-top: -60px;
+  /*margin-top: -60px;*/
+  /*border: 1px solid green;*/
 }
 .skill h2 {
 	font-size: 45px;
 	font-weight: 700;
 }
 .skill p {
-    color: #B8B8B8;
+    color: black;
     font-size: 18px;
     letter-spacing: 0.8px;
     line-height: 1.5em;
     margin: 14px 0 75px 0;
+  text-align: center;
 }
 .skill-slider {
   width: 80%;
@@ -333,10 +336,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin: 0 auto 15px auto;
 }
 .background-image-left {
-  top: 28%;
+  /*top: 28%;*/
   position: absolute;
-  bottom: 0;
-  width: 40%;
+  bottom: 10%;
+  /*width: 40%;*/
   z-index: -4;
 }
 
@@ -344,7 +347,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .project {
   padding: 80px 0;
   position: relative;
-  background-color: black;
+  /*background-color: rgba(210, 238, 130,0.8);*/
+  background-image: url("./assets/img/light/vibrant-red-sky-scene-with-outdoor-background/ProjectBG.png");
+  /*bottom: 0;*/
+  /*width: 100%;*/
+  /*height: auto;*/
+  background-size: cover;
 }
 .project h2 {
 	font-size: 45px;
@@ -352,7 +360,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   text-align: center;
 }
 .project p {
-  color: #B8B8B8;
+  color: #FAF9F6;
   font-size: 18px;
   letter-spacing: 0.8px;
   line-height: 1.5em;
@@ -389,7 +397,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     position: absolute;
     width: 0;
     height: 100%;
-    background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+    background: linear-gradient(90.21deg, rgba(251, 192, 147) -5.91%, rgba(211, 84, 0) 111.58%);
     top: 0;
     left: 0;
     z-index: -1;
@@ -421,7 +429,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .proj-imgbx::before {
   content: "";
-  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+  background: linear-gradient(90.21deg, rgba(251, 192, 147) -5.91%, rgba(211, 84, 0) 111.58%);
   opacity: 0.85;
   position: absolute;
   width: 100%;
@@ -468,7 +476,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /************ Projects Css ************/
 .contact {
-  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+  background: linear-gradient(90.21deg, rgba(30, 196, 244, 0.5) -5.91%, rgba(11,127,171) 111.58%);
   padding: 60px 0 200px 0;
 }
 .contact img {
